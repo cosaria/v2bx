@@ -1,0 +1,8 @@
+services:
+  v2bx:
+    image: ghcr.io/wyx2685/v2bx:latest
+    container_name: v2bx-server
+    restart: always
+    network_mode: host
+    volumes:
+      - ./config:/etc/V2bX
