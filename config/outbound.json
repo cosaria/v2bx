@@ -1,8 +1,12 @@
 [
   {
+    "protocol": "blackhole",
+    "tag": "block"
+  },
+  {
     "tag": "IPv4_out",
     "protocol": "freedom",
-    "sendThrough": "0.0.0.0",
+    "sendThrough": "0.0.0.0/0",
     "settings": {
       "domainStrategy": "UseIPv4"
     }
@@ -14,9 +18,5 @@
     "settings": {
       "domainStrategy": "UseIPv6"
     }
-  },
-  {
-    "protocol": "blackhole",
-    "tag": "block"
   }
 ]

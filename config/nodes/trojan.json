@@ -1,0 +1,23 @@
+{
+  "Core": "xray",
+  "ApiHost": "http://127.0.0.1",
+  "ApiKey": "api_key",
+  "NodeID": 1,
+  "NodeType": "trojan",
+  "Timeout": 30,
+  "DeviceOnlineMinTraffic": 1024,
+  "EnableTFO": true,
+  "EnableUot": true,
+  "CertConfig": {
+    "CertMode": "dns",
+    "RejectUnknownSni": false,
+    "CertDomain": "domain.com",
+    "CertFile": "/etc/V2bX/cert/domain.com.pem",
+    "KeyFile": "/etc/V2bX/cert/domain.com.key",
+    "Provider": "cloudflare",
+    "Email": "",
+    "DNSEnv": {
+      "CF_DNS_API_TOKEN": ""
+    }
+  }
+}

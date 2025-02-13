@@ -1,38 +1,32 @@
 {
   "Log": {
-    "Level": "error",
-    "Output": "/etc/V2bX/error.log"
+    "Level": "info",
+    "Output": "/etc/V2bX/log/v2bx.log"
   },
   "Cores": [
     {
       "Type": "xray",
+      "Log": {
+        "Level": "info",
+        "AccessPath": "/etc/V2bX/log/xray.access.log",
+        "ErrorPath": "/etc/V2bX/log/xray.error.log"
+      },
       "DnsConfigPath": "/etc/V2bX/dns.json",
-      "InboundConfigPath": "",
-      "OutboundConfigPath": "/etc/V2bX/outbound.json",
       "RouteConfigPath": "/etc/V2bX/route.json",
+      "InboundConfigPath": "/etc/V2bX/inbound.json",
+      "OutboundConfigPath": "/etc/V2bX/outbound.json",
       "ConnectionConfig": {
         "handshake": 4,
-        "connIdle": 300,
-        "uplinkOnly": 2,
-        "downlinkOnly": 5,
-        "statsUserUplink": false,
-        "statsUserDownlink": false,
-        "bufferSize": 64
+        "connIdle": 30,
+        "uplinkOnly": 0,
+        "downlinkOnly": 0,
+        "bufferSize": 512
       }
     }
   ],
   "Nodes": [
     {
-      "Core": "xray",
-      "ApiHost": "127.0.0.1",
-      "ApiKey": "abc",
-      "NodeID": 1,
-      "NodeType": "shadowsocks",
-      "Timeout": 30,
-      "DeviceOnlineMinTraffic": 1024,
-      "EnableProxyProtocol": false,
-      "EnableUot": true,
-      "EnableTFO": true
+      "Include": "./nodes/shadowsocks.json"
     }
   ]
 }

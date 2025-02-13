@@ -1,0 +1,11 @@
+{
+  "Core": "xray",
+  "ApiHost": "http://127.0.0.1",
+  "ApiKey": "api_key",
+  "NodeID": 1,
+  "NodeType": "vmess",
+  "Timeout": 30,
+  "DeviceOnlineMinTraffic": 1024,
+  "EnableTFO": true,
+  "EnableUot": true
+}

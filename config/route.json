@@ -6,14 +6,14 @@
       "protocol": ["bittorrent"]
     },
     {
-      "outboundTag": "IPv6_out",
-      "network": "tcp,udp",
-      "ip": ["::/0"]
-    },
-    {
       "outboundTag": "IPv4_out",
       "network": "tcp,udp",
       "ip": ["0.0.0.0/0"]
+    },
+    {
+      "outboundTag": "IPv6_out",
+      "network": "tcp,udp",
+      "ip": ["::/0"]
     }
   ]
 }
