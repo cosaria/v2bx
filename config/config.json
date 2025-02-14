@@ -1,13 +1,13 @@
 {
   "Log": {
-    "Level": "info",
+    "Level": "warning",
     "Output": "/etc/V2bX/log/v2bx.log"
   },
   "Cores": [
     {
       "Type": "xray",
       "Log": {
-        "Level": "info",
+        "Level": "warning",
         "AccessPath": "/etc/V2bX/log/xray.access.log",
         "ErrorPath": "/etc/V2bX/log/xray.error.log"
       },
@@ -24,9 +24,5 @@
       }
     }
   ],
-  "Nodes": [
-    {
-      "Include": "./nodes/shadowsocks.json"
-    }
-  ]
+  "Nodes": []
 }
